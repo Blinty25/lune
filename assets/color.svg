@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e5cfb6"/><stop offset="1" stop-color="#b98d78"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#fff9e9" stop-opacity=".72"/><stop offset="1" stop-color="#fff9e9" stop-opacity="0"/></radialGradient>
+<linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fbe2c8"/><stop offset=".5" stop-color="#e9bb9f"/><stop offset="1" stop-color="#cc937c"/></linearGradient>
+<linearGradient id="hair" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#785146"/><stop offset=".48" stop-color="#3e2f2d"/><stop offset="1" stop-color="#8f6455"/></linearGradient>
+<linearGradient id="pink" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f1cbbe"/><stop offset="1" stop-color="#ad756c"/></linearGradient>
+<linearGradient id="nails" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#b26f68"/><stop offset="1" stop-color="#e4b2a6"/></linearGradient>
+<filter id="blur"><feGaussianBlur stdDeviation="29"/></filter>
+<filter id="shadow" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#3a2921" flood-opacity=".2"/></filter>
+</defs>
+<rect width="900" height="1100" fill="url(#bg)"/><circle cx="190" cy="170" r="350" fill="url(#glow)"/><circle cx="750" cy="870" r="260" fill="#fff0e0" opacity=".12"/>
+<g opacity=".2"><path d="M65 130C215 40 340 95 375 5" stroke="#fff8ed" stroke-width="4" fill="none"/><path d="M680 1200Q580 845 950 740" stroke="#fff8ed" stroke-width="5" fill="none"/></g>
+<rect x="99" y="108" width="704" height="900" rx="280" fill="#f6dfc9" opacity=".43"/>
+<path d="M200 1060Q102 506 339 248Q478 90 637 266Q756 461 691 1070Z" fill="url(#hair)" filter="url(#shadow)"/>
+<path d="M343 340Q494 212 610 375L635 930Q502 1050 349 925Z" fill="#bb8773"/>
+<path d="M334 319Q403 232 479 243Q612 222 685 351Q707 534 623 686Q552 784 508 887Q429 758 371 646Q312 474 334 319Z" fill="#9e6b56"/>
+<path d="M300 405Q353 256 466 254C321 539 405 829 425 1032" stroke="#e2b194" stroke-width="65" stroke-linecap="round" fill="none"/>
+<path d="M474 242Q626 333 535 1083" stroke="#e0b090" stroke-width="90" stroke-linecap="round" fill="none"/>
+<path d="M622 327Q742 497 665 1016" stroke="#684139" stroke-width="70" stroke-linecap="round" fill="none"/>
+<path d="M290 422Q350 231 487 243" stroke="#ffe0be" stroke-width="14" fill="none" opacity=".67"/>
+<g filter="url(#shadow)"><rect x="115" y="755" width="205" height="218" rx="14" fill="#faf0e5"/><rect x="137" y="779" width="161" height="27" rx="5" fill="#a45e49"/><rect x="137" y="823" width="161" height="27" rx="5" fill="#c88965"/><rect x="137" y="867" width="161" height="27" rx="5" fill="#e1b28d"/><rect x="137" y="911" width="161" height="27" rx="5" fill="#63433b"/></g>
+
+</svg>

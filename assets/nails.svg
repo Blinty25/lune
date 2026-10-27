@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ecd9d3"/><stop offset="1" stop-color="#c5948c"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#fff9e9" stop-opacity=".72"/><stop offset="1" stop-color="#fff9e9" stop-opacity="0"/></radialGradient>
+<linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fbe2c8"/><stop offset=".5" stop-color="#e9bb9f"/><stop offset="1" stop-color="#cc937c"/></linearGradient>
+<linearGradient id="hair" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#785146"/><stop offset=".48" stop-color="#3e2f2d"/><stop offset="1" stop-color="#8f6455"/></linearGradient>
+<linearGradient id="pink" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f1cbbe"/><stop offset="1" stop-color="#ad756c"/></linearGradient>
+<linearGradient id="nails" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#b26f68"/><stop offset="1" stop-color="#e4b2a6"/></linearGradient>
+<filter id="blur"><feGaussianBlur stdDeviation="29"/></filter>
+<filter id="shadow" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#3a2921" flood-opacity=".2"/></filter>
+</defs>
+<rect width="900" height="1100" fill="url(#bg)"/><circle cx="190" cy="170" r="350" fill="url(#glow)"/><circle cx="750" cy="870" r="260" fill="#fff0e0" opacity=".12"/>
+<g opacity=".2"><path d="M65 130C215 40 340 95 375 5" stroke="#fff8ed" stroke-width="4" fill="none"/><path d="M680 1200Q580 845 950 740" stroke="#fff8ed" stroke-width="5" fill="none"/></g>
+<circle cx="665" cy="263" r="225" fill="#fff4e4" opacity=".3"/>
+<ellipse cx="470" cy="1020" rx="345" ry="70" fill="#59493e" opacity=".19" filter="url(#blur)"/>
+<g transform="rotate(-13 480 580)" filter="url(#shadow)"><path d="M280 1100C264 878 270 736 265 611L258 360Q257 320 301 319Q348 320 351 367L368 534L386 263Q391 209 441 216Q480 225 474 283L470 520L503 220Q511 178 554 190Q601 199 591 244L561 533L619 301Q633 263 669 274Q706 284 690 326L625 652Q588 835 614 1100Z" fill="url(#skin)"/><rect x="269" y="307" width="77" height="93" rx="30" fill="url(#nails)"/><rect x="402" y="213" width="66" height="98" rx="29" fill="url(#nails)"/><rect x="515" y="188" width="68" height="94" rx="27" fill="#a75f61"/><rect x="625" y="273" width="60" height="88" rx="27" fill="url(#nails)"/><path d="M348 702Q438 677 526 719" fill="none" stroke="#ce9480" stroke-width="12"/></g><circle cx="193" cy="250" r="33" fill="#fff8ed" opacity=".8"/><circle cx="233" cy="176" r="14" fill="#fff8ed" opacity=".8"/>
+</svg>
