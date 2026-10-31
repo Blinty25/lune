@@ -161,19 +161,30 @@ html { scroll-padding-top: 86px; }
 
 .button { border-radius: 999px; }
 .cover-button, .invitation-button {
-  min-height: 44px;
-  padding: 8px 0;
-  gap: 12px;
-  color: #fff2e8;
+  min-height: 46px;
+  padding: 3px 0;
+  gap: clamp(12px, 1.4vw, 21px);
+  color: #f6e8d7;
   background: transparent;
+  border: 0;
   border-radius: 0;
-  border-bottom: 1px solid #c2a68f;
-  font-weight: 500;
+  font: 400 clamp(18px, 1.55vw, 23px)/1.2 var(--serif);
+}
+.cover-button span, .invitation-button span {
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #a58a78;
+  border-radius: 50%;
+  font: 16px/1 var(--sans);
 }
 .cover-button:hover, .invitation-button:hover {
-  color: #fff;
-  border-bottom-color: currentColor;
+  color: white;
   transform: none;
+}
+.cover-button:hover span, .invitation-button:hover span {
+  border-color: currentColor;
 }
 .cover-button:focus-visible, .invitation-button:focus-visible {
   outline: 2px solid currentColor;
