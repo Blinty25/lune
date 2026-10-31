@@ -133,3 +133,28 @@ html { scroll-padding-top: 86px; }
 .visit-note > p:last-child { margin: 0; font: 16px/1.65 var(--sans); }
 .booking-panel label { display: block; margin-bottom: 8px; font-weight: 600; }
 .booking-panel select { width: 100%; padding: 12px; background: var(--paper); color: var(--ink); border: 1px solid var(--rule); font: inherit; }
+
+/* One continuous cover spread; the media follows the height of the copy. */
+.cover-layout {
+  width: 100%; max-width: 1240px; padding: 0; gap: 0;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr); align-items: stretch;
+}
+.cover-copy { padding: clamp(26px, 4vw, 60px) clamp(20px, 3vw, 48px); }
+.cover-plate { position: relative; width: 100%; margin: 0; overflow: hidden; }
+.cover-plate img { position: absolute; inset: 0; width: 100%; height: 100%; object-position: 50% 52%; }
+.cover-plate::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg,#302025,transparent 24%); }
+.service-bottom { align-items: center; flex-direction: row; flex-wrap: wrap; }
+.service-choice { display: inline-flex; gap: 5px; align-items: center; min-height: 40px; cursor: pointer; font-size: 13px; }
+.service-choice input { accent-color: var(--wine); }
+.service-card:has(input:checked), .service-card:target { background: #eee3d5; }
+.work-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,300px),1fr)); gap: clamp(16px,3vw,40px); }
+.work-example { display: grid; grid-template-columns: minmax(0,1.3fr) minmax(0,1fr); align-items: center; gap: 16px; border-top: 1px solid var(--rule); padding-top: 12px; }
+.work-example img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.work-example h3 { font: clamp(23px,2.3vw,36px)/1.1 var(--serif); margin: 8px 0 16px; }
+.work-example small { color: #61513f; }
+.work-example span { font-size: 13px; border-bottom: 1px solid; }
+@media (max-width: 520px) {
+  .cover-layout { grid-template-columns: minmax(0,1.4fr) minmax(0,1fr); }
+  .cover-copy { padding: 27px 8px 27px 15px; }
+  .cover-plate img { object-position: 56% 50%; }
+}
