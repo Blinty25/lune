@@ -158,3 +158,42 @@ html { scroll-padding-top: 86px; }
   .cover-copy { padding: 27px 8px 27px 15px; }
   .cover-plate img { object-position: 56% 50%; }
 }
+
+.button { border-radius: 999px; }
+.cover-button, .invitation-button {
+  color: #fff2e8; background: #6b4750; border: 1px solid #b08a8d;
+}
+.cover-button:hover, .invitation-button:hover { background: #79545e; }
+.service-choice { position: relative; border-radius: 999px; }
+.service-choice input {
+  position: absolute; width: 1px; height: 1px; opacity: 0;
+}
+.service-choice span {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 88px; min-height: 38px; padding: 7px 15px; border-radius: inherit;
+  font: 600 13px/1.25 var(--sans); color: var(--wine);
+  background: #eee1d8; border: 1px solid #ccaea9;
+}
+.service-choice .choice-active, .service-choice input:checked ~ .choice-idle { display: none; }
+.service-choice input:checked ~ .choice-active { display: inline-flex; background: var(--wine); border-color: var(--wine); color: white; }
+.service-choice input:focus-visible ~ span { outline: 2px solid var(--wine); outline-offset: 3px; }
+.portfolio .container { position: relative; }
+.portfolio .section-heading { padding-right: 95px; }
+.work-controls { position: absolute; top: 0; right: 0; display: flex; gap: 6px; }
+.work-controls[hidden] { display: none; }
+.work-controls button { width: 40px; height: 40px; border: 1px solid #9f8881; border-radius: 50%; background: transparent; color: var(--wine); cursor: pointer; font-size: 18px; }
+.work-controls button:disabled { opacity: .35; cursor: default; }
+.work-grid { display: grid; grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: clamp(245px,34%,420px); overflow-x: auto; scroll-snap-type: x mandatory; gap: 18px; padding: 4px 2px 14px; scrollbar-width: thin; scrollbar-color: #9d7473 transparent; }
+.work-example { display: block; border: 0; padding: 0; scroll-snap-align: start; }
+.work-example img { aspect-ratio: 4 / 3; border-radius: 14px; }
+.work-example div { padding: 12px 2px; }
+.work-example h3 { margin: 3px 0 8px; }
+.invitation { padding-block: clamp(32px,5vw,72px); background: #39252c; color: var(--paper); }
+.invitation-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 22px; }
+.invitation h2 { margin: 0; font: 400 clamp(37px,5vw,70px)/1.05 var(--serif); }
+.invitation em { color: #e8caa7; }
+.invitation p { margin: 10px 0 0; line-height: 1.5; }
+@media(max-width:600px) {
+  .work-grid { grid-auto-columns: 80%; }
+  .work-controls button { width: 36px; height: 36px; }
+}
