@@ -161,9 +161,24 @@ html { scroll-padding-top: 86px; }
 
 .button { border-radius: 999px; }
 .cover-button, .invitation-button {
-  color: #fff2e8; background: #6b4750; border: 1px solid #b08a8d;
+  min-height: 44px;
+  padding: 8px 0;
+  gap: 12px;
+  color: #fff2e8;
+  background: transparent;
+  border-radius: 0;
+  border-bottom: 1px solid #c2a68f;
+  font-weight: 500;
 }
-.cover-button:hover, .invitation-button:hover { background: #79545e; }
+.cover-button:hover, .invitation-button:hover {
+  color: #fff;
+  border-bottom-color: currentColor;
+  transform: none;
+}
+.cover-button:focus-visible, .invitation-button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
 .service-choice { position: relative; border-radius: 999px; }
 .service-choice input {
   position: absolute; width: 1px; height: 1px; opacity: 0;
